@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Gurux.DLMS</RootNamespace>
+    <AssemblyName>Gurux.DLMS</AssemblyName>
+    <Company>Gurux Ltd</Company>
+    <Authors>Gurux Ltd</Authors>
+    <Copyright>Copyright (c) 1998-2020 Gurux Ltd. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://www.gurux.fi</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <Description>Gurux DLMS library for C#</Description>
+    <Version Condition=" '$(BUILD_BUILDNUMBER)' == '' ">9.0.2111.3001</Version>
+    <Version Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/gurux/gurux.dlms.net</RepositoryUrl>
+    <PackageTags>DLMS AMR, AMI IOT</PackageTags>
+    <PackageId>Gurux.DLMS</PackageId>
+    <PackageIcon>Gurux.DLMS.png</PackageIcon>
+    <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
+    <ApplicationIcon>Gurux.DLMS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
+    <DefineConstants>TRACE;ZIP</DefineConstants>
+  </PropertyGroup>
+
+ <ItemGroup>
+	<Reference Condition="'$(TargetFramework)' == 'net472'" Include="System.Windows.Forms" />
+   </ItemGroup>
+<ItemGroup>
+	<Reference Condition="'$(TargetFramework)' == 'net472'" Include="System.Drawing.Design" />
+   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Gurux.DLMS.Net.Android\**" />
+    <Compile Remove="UWP\**" />
+    <EmbeddedResource Remove="Gurux.DLMS.Net.Android\**" />
+    <EmbeddedResource Remove="UWP\**" />
+    <None Remove="Gurux.DLMS.Net.Android\**" />
+    <None Remove="UWP\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ManufacturerSettings\GXXmlEditor.cs" />
+    <Compile Update="ManufacturerSettings\GXXmlEditor.Designer.cs">
+      <DependentUpon>GXXmlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Strings\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resw</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Strings\Resources.resw">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Gurux.DLMS.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ankom.Common\Ankom.Common\Ankom.Common.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,77 @@
+﻿{
+  "$type": "Stend.Production.Root.RootScript, Stend.Production.Root",
+  "Name": "Скрипт производственной настройки",
+  "Steps": {
+    "$type": "Stend.Production.Root.PluginBase[], Stend.Production.Root",
+    "$values": [
+      {
+        "$type": "Stend.Production.Initialization.PlugIn, Stend.Production.Initialization",
+        "OBIS": null,
+        "Value": null,
+        "Attribute": 0,
+        "InternalSteps": {
+          "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+          "$values": [
+            {
+              "$type": "Stend.Production.ReadObject.PluginObject, Stend.Production.ReadObject",
+              "OBIS": "0.0.96.51.5.255",
+              "Value": null,
+              "AttributeInx": 2,
+              "Attribute": 2,
+              "InternalSteps": {
+                "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+                "$values": []
+              },
+              "Name": "ReadControl",
+              "StepName": "Чтение объекта ПУ",
+              "Description": "0.0.96.51.5.255: Состояние электронных пломб",
+              "Version": "1.1",
+              "Order": 0,
+              "ID": 0
+            },
+            {
+              "$type": "Stend.Production.ReadObject.PluginObject, Stend.Production.ReadObject",
+              "OBIS": "0.0.96.170.2.255",
+              "Value": null,
+              "AttributeInx": 2,
+              "Attribute": 2,
+              "InternalSteps": {
+                "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+                "$values": []
+              },
+              "Name": "ReadControl",
+              "StepName": "Чтение объекта ПУ",
+              "Description": "0.0.96.170.2.255: Коды контроллеров 2",
+              "Version": "1.1",
+              "Order": 0,
+              "ID": 0
+            },
+            {
+              "$type": "Stend.Production.ReadObject.PluginObject, Stend.Production.ReadObject",
+              "OBIS": "0.0.96.170.1.255",
+              "Value": null,
+              "AttributeInx": 2,
+              "Attribute": 2,
+              "InternalSteps": {
+                "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+                "$values": []
+              },
+              "Name": "ReadControl",
+              "StepName": "Чтение объекта ПУ",
+              "Description": "0.0.96.170.1.255: Коды контроллеров 1",
+              "Version": "1.1",
+              "Order": 0,
+              "ID": 0
+            }
+          ]
+        },
+        "Name": "Initialization",
+        "StepName": "Настройка объектов ПУ",
+        "Description": "Выполнение Настройки списка объектов",
+        "Version": "1.1",
+        "Order": 0,
+        "ID": 0
+      }
+    ]
+  }
+}

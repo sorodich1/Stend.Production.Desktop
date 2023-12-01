@@ -1,0 +1,83 @@
+﻿{
+  "$type": "Stend.Production.Root.RootScript, Stend.Production.Root",
+  "Name": "Скрипт производственной настройки",
+  "Steps": {
+    "$type": "Stend.Production.Root.PluginBase[], Stend.Production.Root",
+    "$values": [
+      {
+        "$type": "Stend.Production.Initialization.PlugIn, Stend.Production.Initialization",
+        "OBIS": null,
+        "Value": null,
+        "Attribute": 0,
+        "InternalSteps": {
+          "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+          "$values": [
+            {
+              "$type": "Stend.Production.FileWrite.PluginObject, Stend.Production.FileWrite",
+              "FileValue": {
+                "$type": "System.Collections.Generic.List`1[[System.Object, mscorlib]], mscorlib",
+                "$values": [
+                  {
+                    "$type": "System.Collections.Generic.List`1[[Stend.Production.FileWrite.CaptureGridObject, Stend.Production.FileWrite]], mscorlib",
+                    "$values": [
+                      {
+                        "$type": "Stend.Production.FileWrite.CaptureGridObject, Stend.Production.FileWrite",
+                        "OBIS": "1.0.1.8.0.255",
+                        "Name": "Активная энергия, импорт, ƩТ, Вт·час",
+                        "DataIndex": 1,
+                        "AttributeInx": 2,
+                        "Comment": null
+                      },
+                      {
+                        "$type": "Stend.Production.FileWrite.CaptureGridObject, Stend.Production.FileWrite",
+                        "OBIS": "1.0.1.8.1.255",
+                        "Name": "Активная энергия, импорт, тариф 1, Вт·час",
+                        "DataIndex": 2,
+                        "AttributeInx": 2,
+                        "Comment": null
+                      },
+                      {
+                        "$type": "Stend.Production.FileWrite.CaptureGridObject, Stend.Production.FileWrite",
+                        "OBIS": "1.0.1.8.2.255",
+                        "Name": "Активная энергия, импорт, тариф 2, Вт·час",
+                        "DataIndex": 3,
+                        "AttributeInx": 2,
+                        "Comment": null
+                      },
+                      {
+                        "$type": "Stend.Production.FileWrite.CaptureGridObject, Stend.Production.FileWrite",
+                        "OBIS": "0.0.1.0.0.255",
+                        "Name": "Дата и время",
+                        "DataIndex": 4,
+                        "AttributeInx": 2,
+                        "Comment": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              "OBIS": "0.0.96.1.0.255",
+              "Name": "FileWriteControl",
+              "StepName": "Запись объекта ПУ из файла",
+              "Description": "0.0.96.1.0.255: Заводской номер ПУ",
+              "Version": "1.1",
+              "Attribute": 3,
+              "InternalSteps": {
+                "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+                "$values": []
+              },
+              "Order": 0,
+              "ID": 0
+            }
+          ]
+        },
+        "Name": "Initialization",
+        "StepName": "Настройка объектов ПУ",
+        "Description": "Выполнение Настройки списка объектов",
+        "Version": "1.1",
+        "Order": 0,
+        "ID": 0
+      }
+    ]
+  }
+}

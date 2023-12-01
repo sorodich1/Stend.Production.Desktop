@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessViolatedTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает о нарушении области доступа.</value>
+  </data>
+  <data name="DataBlockNumberInvalidTxt" xml:space="preserve">
+    <value>Ошибка доступа: Неверный номер блока данных.</value>
+  </data>
+  <data name="DataBlockUnavailableTxt" xml:space="preserve">
+    <value>Ошибка доступа: Блок данных недоступен.</value>
+  </data>
+  <data name="DisconnectMode" xml:space="preserve">
+    <value>Режим отключения.</value>
+  </data>
+  <data name="HardwareFaultTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает об аппаратной ошибке.</value>
+  </data>
+  <data name="InconsistentClassTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает о несогласованном классе или объекте.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="India" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\india.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="InvalidLogicalName" xml:space="preserve">
+    <value>Недопустимое логическое имя.</value>
+  </data>
+  <data name="Italy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\italy.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="LogicalNameTxt" xml:space="preserve">
+    <value>Логическое имя</value>
+  </data>
+  <data name="LongGetOrReadAbortedTxt" xml:space="preserve">
+    <value>Ошибка доступа: Прервана операция длительного чтения.</value>
+  </data>
+  <data name="LongSetOrWriteAbortedTxt" xml:space="preserve">
+    <value>Ошибка доступа: Прервана операция длительной записи.</value>
+  </data>
+  <data name="NoLongGetOrReadInProgressTxt" xml:space="preserve">
+    <value>Ошибка доступа: Операция длительного чтения не выполняется.</value>
+  </data>
+  <data name="NoLongSetOrWriteInProgressTxt" xml:space="preserve">
+    <value>Ошибка доступа: Операция длительной записи не выполняется.</value>
+  </data>
+  <data name="OBISCodes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\obiscodes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OtherReasonTxt" xml:space="preserve">
+    <value>Ошибка Доступа: Другая причина.</value>
+  </data>
+  <data name="ReadWriteDeniedTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает, что чтение и запись запрещены.</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Сообщение HDLC отклонено.</value>
+  </data>
+  <data name="SaudiArabia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\saudiarabia.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TemporaryFailureTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает о временном сбое.</value>
+  </data>
+  <data name="UnacceptableFrame" xml:space="preserve">
+    <value>Неприемлемый кадр.</value>
+  </data>
+  <data name="UnavailableObjectTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает о недоступном объекте.</value>
+  </data>
+  <data name="UndefinedObjectTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает о неопределенном объекте.</value>
+  </data>
+  <data name="UnitA260Txt" xml:space="preserve">
+    <value>A260*60s</value>
+  </data>
+  <data name="UnitActiveEnergyTxt" xml:space="preserve">
+    <value>Активная энергия W*60*60s</value>
+  </data>
+  <data name="UnitActivePowerTxt" xml:space="preserve">
+    <value>Активная мощность P watt W = J/s</value>
+  </data>
+  <data name="UnitActiveTxt" xml:space="preserve">
+    <value>Постоянная счетчика активной энергии 1/Wh</value>
+  </data>
+  <data name="UnitApparentEnergyTxt" xml:space="preserve">
+    <value>Полная энергия VA*60*60s</value>
+  </data>
+  <data name="UnitApparentPowerTxt" xml:space="preserve">
+    <value>Полная  мощность S</value>
+  </data>
+  <data name="UnitApparentTxt" xml:space="preserve">
+    <value>Постоянная счетчика полной энергии</value>
+  </data>
+  <data name="UnitCapacityTxt" xml:space="preserve">
+    <value>Ёмкость C farad C/V = As/V</value>
+  </data>
+  <data name="UnitConductanceTxt" xml:space="preserve">
+    <value>Проводимостьsiemens 1/ohm</value>
+  </data>
+  <data name="UnitCorrectedVolumeFluxHourTxt" xml:space="preserve">
+    <value>Скорректированный объемный поток m3/60*60s</value>
+  </data>
+  <data name="UnitCorrectedVolumeTxt" xml:space="preserve">
+    <value>Скорректированный объем m3</value>
+  </data>
+  <data name="UnitCorrecteVolumeFluxDayTxt" xml:space="preserve">
+    <value>Скорректированный объемный поток m3/24*60*60s</value>
+  </data>
+  <data name="UnitCurrentTxt" xml:space="preserve">
+    <value>Ток I ampere A</value>
+  </data>
+  <data name="UnitDayTxt" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="UnitElectricalChargeTxt" xml:space="preserve">
+    <value>Электрический заряд Q coulomb C = As</value>
+  </data>
+  <data name="UnitElectricalFieldStrengthTxt" xml:space="preserve">
+    <value>Напряженность электрического поля E V/m</value>
+  </data>
+  <data name="UnitEnergyJouleTxt" xml:space="preserve">
+    <value>Энергия joule J = Nm = Ws</value>
+  </data>
+  <data name="UnitEnergyTxt" xml:space="preserve">
+    <value>Энергия newtonmeter J = Nm = Ws</value>
+  </data>
+  <data name="UnitForceTxt" xml:space="preserve">
+    <value>Сила F newton N</value>
+  </data>
+  <data name="UnitFrequencyTxt" xml:space="preserve">
+    <value>Частота f</value>
+  </data>
+  <data name="UnitHourTxt" xml:space="preserve">
+    <value>Час</value>
+  </data>
+  <data name="UnitInductionTxt" xml:space="preserve">
+    <value>Индуктивность T tesla Wb/m2</value>
+  </data>
+  <data name="UnitInductivityTxt" xml:space="preserve">
+    <value>Индуктивность L henry H = Wb/A</value>
+  </data>
+  <data name="UnitLengthTxt" xml:space="preserve">
+    <value>Длина l meter m</value>
+  </data>
+  <data name="UnitLocalCurrencyTxt" xml:space="preserve">
+    <value>Местная валюта</value>
+  </data>
+  <data name="UnitMagneticFluxTxt" xml:space="preserve">
+    <value>Магнитный поток F weber Wb = Vs</value>
+  </data>
+  <data name="UnitMagneticTxt" xml:space="preserve">
+    <value>Напряженность магнитного поля H A/m</value>
+  </data>
+  <data name="UnitMassKgPerSecondTxt" xml:space="preserve">
+    <value>Mass flux kg/s</value>
+  </data>
+  <data name="UnitMassKgTxt" xml:space="preserve">
+    <value>Mass m kilogram kg</value>
+  </data>
+  <data name="UnitMinuteTxt" xml:space="preserve">
+    <value>Минута</value>
+  </data>
+  <data name="UnitMonthTxt" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="UnitNoneTxt" xml:space="preserve">
+    <value>Нет единицы измерения</value>
+  </data>
+  <data name="UnitOtherTxt" xml:space="preserve">
+    <value>Другая единица измерения</value>
+  </data>
+  <data name="UnitPhasAngleDegreeTxt" xml:space="preserve">
+    <value>Фазовый угол degree rad*180/p</value>
+  </data>
+  <data name="UnitPressureBarTxt" xml:space="preserve">
+    <value>Давление p bar 10-5 N/m2</value>
+  </data>
+  <data name="UnitPressurePascalTxt" xml:space="preserve">
+    <value>Давление p pascal N/m2</value>
+  </data>
+  <data name="UnitReactiveEnergyTxt" xml:space="preserve">
+    <value>Реактивная энергия var*60*60s</value>
+  </data>
+  <data name="UnitReactivePowerTxt" xml:space="preserve">
+    <value>Реактивная мощность Q</value>
+  </data>
+  <data name="UnitReactiveTxt" xml:space="preserve">
+    <value>Постоянная счетчика реактивной энергии</value>
+  </data>
+  <data name="UnitResistanceTxt" xml:space="preserve">
+    <value>СопротивлениеR ohm = V/A</value>
+  </data>
+  <data name="UnitResistivityTxt" xml:space="preserve">
+    <value>Удельное сопротивление</value>
+  </data>
+  <data name="UnitSecondTxt" xml:space="preserve">
+    <value>Секунда</value>
+  </data>
+  <data name="UnitSpeedTxt" xml:space="preserve">
+    <value>Скорость v m/s</value>
+  </data>
+  <data name="UnitTemperatureTxt" xml:space="preserve">
+    <value>Температура T градусы Цельсия</value>
+  </data>
+  <data name="UnitThermalPowerTxt" xml:space="preserve">
+    <value>Тепловая мощность J/60*60s</value>
+  </data>
+  <data name="UnitV260Txt" xml:space="preserve">
+    <value>V260*60s</value>
+  </data>
+  <data name="UnitVoltageTxt" xml:space="preserve">
+    <value>Напряжение</value>
+  </data>
+  <data name="UnitVolumeCubicMeterTxt" xml:space="preserve">
+    <value>Объем V m3</value>
+  </data>
+  <data name="UnitVolumeFluxDayTxt" xml:space="preserve">
+    <value>Объемный поток m3/24*60*60s</value>
+  </data>
+  <data name="UnitVolumeFluxHourTxt" xml:space="preserve">
+    <value>Объемный поток m3/60*60s</value>
+  </data>
+  <data name="UnitVolumeLiterTxt" xml:space="preserve">
+    <value>Объем 10-3 m3</value>
+  </data>
+  <data name="UnitWeekTxt" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="UnitYearTxt" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="UnknownErrorTxt" xml:space="preserve">
+    <value>Неизвестная ошибка.</value>
+  </data>
+  <data name="UnmatchedTypeTxt" xml:space="preserve">
+    <value>Ошибка доступа: Устройство сообщает о несоответствующем типе.</value>
+  </data>
+  <data name="InvalidKeyUsage" xml:space="preserve">
+    <value>Неверное использование ключа.</value>
+  </data>
+  <data name="Spain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\spain.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="UserAbortModeTxt" xml:space="preserve">
+    <value>Операция прервана пользователем.</value>
+  </data>
+</root>

@@ -1,0 +1,43 @@
+{
+  "$type": "Stend.Production.Root.RootScript, Stend.Production.Root",
+  "Name": "Скрипт производственной настройки",
+  "Steps": {
+    "$type": "Stend.Production.Root.PluginBase[], Stend.Production.Root",
+    "$values": [
+      {
+        "$type": "Stend.Production.Initialization.PlugIn, Stend.Production.Initialization",
+        "OBIS": null,
+        "Value": null,
+        "Attribute": 0,
+        "InternalSteps": {
+          "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+          "$values": [
+            {
+              "$type": "Stend.Production.Write.PluginObject, Stend.Production.Write",
+              "OBIS": "0.0.96.9.0.255",
+              "Value": "10",
+              "Attribute": 2,
+              "TypeDataDLMS": 5,
+              "Name": "WriteObject",
+              "StepName": "Запись объекта ПУ",
+              "Description": "0.0.96.9.0.255: Температура окружающей среды",
+              "Version": "1.00",
+              "InternalSteps": {
+                "$type": "System.Collections.Generic.List`1[[Stend.Production.Root.PluginBase, Stend.Production.Root]], mscorlib",
+                "$values": []
+              },
+              "Order": 0,
+              "ID": 0
+            }
+          ]
+        },
+        "Name": "Initialization",
+        "StepName": "Настройка объектов ПУ",
+        "Description": "Выполнение Настройки списка объектов",
+        "Version": "1.1",
+        "Order": 0,
+        "ID": 0
+      }
+    ]
+  }
+}

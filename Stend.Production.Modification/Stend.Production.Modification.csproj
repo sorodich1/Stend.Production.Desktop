@@ -1,0 +1,191 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EFA4B2C-605A-4143-BAD7-F5CE026F55FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stend.Production.Modification</RootNamespace>
+    <AssemblyName>Stend.Production.Modification</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingComPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingComPort.Designer.cs">
+      <DependentUpon>SettingComPort.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingComPort.resx">
+      <DependentUpon>SettingComPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Data\DefaultFile\DefaultDevice.zds">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DefaultFile\OldSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DefaultFile\PortSetting.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\DefaultFile\ScriptDefault.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\Stend.Production.Root.PlaceSetting.datasource" />
+    <None Include="Properties\DataSources\Stend.Production.Root.SettingPort.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettingstarted.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettingstarted1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentunpaid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parameters.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pivottableoptions.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ankom.Common\Ankom.Common\Ankom.Common.csproj">
+      <Project>{a1a336e1-54c8-4ca9-8b43-5dbfb480bda8}</Project>
+      <Name>Ankom.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Common.Dev\Gurux.Common.csproj">
+      <Project>{86177a65-170a-4c65-a130-4b5274ae19fe}</Project>
+      <Name>Gurux.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GURUX.DLMS.Net.Dev\ZIP.DLMS.Net.csproj">
+      <Project>{9DAF667E-8C2A-4702-9B9E-E1C67B9E51D9}</Project>
+      <Name>ZIP.DLMS.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Net.Dev\Gurux.Net.csproj">
+      <Project>{9fb39c8f-985a-4be3-a170-958cc31b86b7}</Project>
+      <Name>Gurux.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Serial.Dev\Gurux.Serial.csproj">
+      <Project>{d0f88f57-28c9-4555-a2b6-3f57081a69f4}</Project>
+      <Name>Gurux.Serial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Terminal.Dev\Gurux.Terminal.csproj">
+      <Project>{ec62ba88-feb5-496e-8a22-b22588d5461c}</Project>
+      <Name>Gurux.Terminal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Production.Script\Production.Script.csproj">
+      <Project>{f6d6e6f7-06fb-4697-84c8-12aa704b5ec7}</Project>
+      <Name>Production.Script</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stend.Production.Calibration\Stend.Production.Calibration.csproj">
+      <Project>{fa365e0c-d223-406b-b423-d9464f882b04}</Project>
+      <Name>Stend.Production.Calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stend.Production.WriteMasterKey\Stend.Production.WriteMasterKey.csproj">
+      <Project>{524c08e6-b9ed-42a6-9499-eb19a71b16e7}</Project>
+      <Name>Stend.Production.WriteMasterKey</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZIP.DLMS\ZIP.DLMS.csproj">
+      <Project>{F9C42603-E9AA-4B06-89A6-62F645C0CA48}</Project>
+      <Name>ZIP.DLMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NLog">
+      <Version>5.2.6</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\DefaultFile\Association.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,197 @@
+﻿{
+"Objects": [
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 1,
+    "Serial": "8888",
+    "Port": "COM5",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 2,
+    "Serial": "",
+    "Port": "",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 3,
+    "Serial": "",
+    "Port": "",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 4,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 5,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 6,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 7,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 8,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 9,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 10,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 11,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 12,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 13,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 14,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 15,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 15,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 17,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 18,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 19,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 20,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 21,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 22,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 23,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  },
+  {
+    "$type": "Production.Script.StendPlaceSetting, Production.Script",
+    "IsActiv": false,
+    "PlaceID": 24,
+    "Serial": " ",
+    "Port": " ",
+    "Steps": null
+  }
+]
+
+}

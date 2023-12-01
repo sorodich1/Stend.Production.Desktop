@@ -1,0 +1,95 @@
+{
+  "$type": "Script.Test.RootObject, Script.Test",
+  "Script": {
+    "$type": "Script.Test.Parametrisation, Script.Test",
+    "baseSteps": {
+      "$type": "System.Collections.Generic.List`1[[Script.Test.BaseSteps, Script.Test]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Script.Test.InicialisationStep, Script.Test",
+          "Objects": {
+            "$type": "Gurux.DLMS.Objects.GXDLMSObjectCollection, DLMSProject.ZIP.Net",
+            "$values": [
+              {
+                "$type": "Gurux.DLMS.Objects.GXDLMSRegister, DLMSProject.ZIP.Net",
+                "Scaler": 1.0,
+                "Unit": 0,
+                "Value": null,
+                "ObjectType": "Register",
+                "Tag": null,
+                "Version": 0,
+                "ShortName": 0,
+                "Name": "1.0.12.7.0.255",
+                "LogicalName": "1.0.12.7.0.255",
+                "Description": null
+              },
+              {
+                "$type": "Gurux.DLMS.Objects.GXDLMSData, DLMSProject.ZIP.Net",
+                "Value": null,
+                "ObjectType": "Data",
+                "Tag": null,
+                "Version": 0,
+                "ShortName": 0,
+                "Name": "1.0.0.1.0.255",
+                "LogicalName": "1.0.0.1.0.255",
+                "Description": null
+              }
+            ]
+          },
+          "StepName": "InicialisationStep"
+        },
+        {
+          "$type": "Script.Test.CalibrationStep, Script.Test",
+          "Calibrations": {
+            "$type": "System.Collections.Generic.List`1[[Script.Test.Calibration, Script.Test]], System.Private.CoreLib",
+            "$values": [
+              {
+                "$type": "Script.Test.Calibration, Script.Test",
+                "Name": "Калибровка счётчика",
+                "CalibObject": {
+                  "$type": "Gurux.DLMS.Objects.GXDLMSRegister, DLMSProject.ZIP.Net",
+                  "Scaler": 1.0,
+                  "Unit": 0,
+                  "Value": null,
+                  "Parent": null,
+                  "ObjectType": "Register",
+                  "Tag": null,
+                  "Version": 0,
+                  "ShortName": 0,
+                  "Name": "1.0.12.7.0.255",
+                  "LogicalName": "1.0.12.7.0.255",
+                  "Description": null
+                },
+                "BaseValue": 220.0,
+                "calibCoef": "C# script калибровки напряжения",
+                "Script": "C# script калибровки напряжения"
+              },
+              {
+                "$type": "Script.Test.Calibration, Script.Test",
+                "Name": "Калибровка тока",
+                "CalibObject": {
+                  "$type": "Gurux.DLMS.Objects.GXDLMSRegister, DLMSProject.ZIP.Net",
+                  "Scaler": 1.0,
+                  "Unit": 0,
+                  "Value": null,
+                  "Parent": null,
+                  "ObjectType": "Register",
+                  "Tag": null,
+                  "Version": 0,
+                  "ShortName": 0,
+                  "Name": "1.0.0.1.0.255",
+                  "LogicalName": "1.0.0.1.0.255",
+                  "Description": null
+                },
+                "BaseValue": 15.0,
+                "calibCoef": "C# script калибровки тока",
+                "Script": "C# script калибровки тока"
+              }
+            ]
+          },
+          "StepName": "CalibrationStep"
+        }
+      ]
+    }
+  }
+}

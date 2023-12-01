@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9C42603-E9AA-4B06-89A6-62F645C0CA48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZIP.DLMS</RootNamespace>
+    <AssemblyName>ZIP.DLMS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ZIP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CryptHelper.cs" />
+    <Compile Include="GXDLMSEnums.cs" />
+    <Compile Include="GXDLMSCommunicator.cs" />
+    <Compile Include="GXDLMSDevice.cs" />
+    <Compile Include="GXDLMSReader.cs" />
+    <Compile Include="GXLogWriter.cs" />
+    <Compile Include="ClassMapping.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Spodes.cs" />
+    <Compile Include="SpodesDescr.cs" />
+    <Compile Include="SpodesUnits.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ankom.Common\Ankom.Common\Ankom.Common.csproj">
+      <Project>{a1a336e1-54c8-4ca9-8b43-5dbfb480bda8}</Project>
+      <Name>Ankom.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Common.Dev\Gurux.Common.csproj">
+      <Project>{c5d9686a-de06-4492-84a5-cd17b75726f9}</Project>
+      <Name>Gurux.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GURUX.DLMS.Net.Dev\ZIP.DLMS.Net.csproj">
+      <Project>{cc9a0f0e-86d2-4c5f-bb3a-3931ac746a8d}</Project>
+      <Name>ZIP.DLMS.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Net.Dev\Gurux.Net.csproj">
+      <Project>{3a90e106-8391-4f9c-8f5c-b30e79baaa5c}</Project>
+      <Name>Gurux.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Serial.Dev\Gurux.Serial.csproj">
+      <Project>{2feded4f-71be-45b2-98f7-8a7e789e00ab}</Project>
+      <Name>Gurux.Serial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gurux.Terminal.Dev\Gurux.Terminal.csproj">
+      <Project>{2cb5232f-702a-463a-b810-58db8b95d89b}</Project>
+      <Name>Gurux.Terminal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="NLog">
+      <Version>4.7.13</Version>
+    </PackageReference>
+    <PackageReference Include="NLog.Config">
+      <Version>4.7.13</Version>
+    </PackageReference>
+    <PackageReference Include="NLog.Schema">
+      <Version>4.7.13</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
